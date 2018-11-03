@@ -1,0 +1,12 @@
+{
+  "name": "vai_voando",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Pedro Azevedo <theazevedo@outlook.com>",
+  "license": "MIT",
+  "dependencies": {
+    "bulma-carousel": "^3.0.0",
+    "ejs": "^2.6.1",
+    "express": "^4.16.4"
+  }
+}
