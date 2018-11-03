@@ -8,5 +8,18 @@
     "bulma-carousel": "^3.0.0",
     "ejs": "^2.6.1",
     "express": "^4.16.4"
-  }
+  },
+  "description": "",
+  "devDependencies": {},
+  "scripts": {
+    "start": "index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TheAzevedoMan/vai_voando.git"
+  },
+  "bugs": {
+    "url": "https://github.com/TheAzevedoMan/vai_voando/issues"
+  },
+  "homepage": "https://github.com/TheAzevedoMan/vai_voando#readme"
 }
