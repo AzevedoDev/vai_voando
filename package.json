@@ -5,6 +5,7 @@
   "author": "Pedro Azevedo <theazevedo@outlook.com>",
   "license": "MIT",
   "dependencies": {
+    "body-parser": "^1.18.3",
     "bulma-carousel": "^3.0.0",
     "ejs": "^2.6.1",
     "express": "^4.16.4",

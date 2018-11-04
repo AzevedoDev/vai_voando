@@ -20,15 +20,40 @@ $(document).ready(()=>{
       
       
       
-        var telefone = $('#telefone').on('focusout', function () {
-            var value = $(this).val()
+        let telefone = $('#telefone').on('focusout', function () {
+            let value = $(this).val()
             console.log(value.length)
 
               if (value.length < 11) {
-                return telefone.mask('(00) 0000-0000')
+                return telefone.mask('(00) 0000-0000'),telefone
               }else{
-                return telefone.mask('(00) 00000-0000')
+                return telefone.mask('(00) 00000-0000'),telefone
               }
+        })
+
+        let completeName = $('#completeName').on('focusout', function(){
+          let name = $(this).val()
+          return name
+        })
+        let emailContato = $('#emailContato').on('focusout', function(){
+          let email = $(this).val()
+          return email
+        })
+        let endColeta = $('#endColeta').on('focusout', function(){
+          let endColeta = $(this).val()
+          return endColeta
+        })
+        let cepColeta = $('#cepColeta').on('focusout', function(){
+          let cepColeta = $(this).val()
+          return cepColeta
+        })
+        let endEntrega = $('#endEntrega').on('focusout', function(){
+          let endEntrega = $(this).val()
+          return endEntrega
+        })
+        let cepEntrega = $('#cepEntrega').on('focusout', function(){
+          let cepEntrega = $(this).val()
+          return cepEntrega
         })
         
 
