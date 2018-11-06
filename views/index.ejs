@@ -1,29 +1,4 @@
 <%- include('header'); -%>
-
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <div class="container">
-      <img src="./img/logo2.png" class="logonav" alt="">
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
-        aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-      <div class="collapse navbar-collapse " id="navbarTogglerDemo02">
-        <ul class="navbar-nav ml-auto mt-2 mt-lg-0 ">
-          <li class="nav-item">
-            <a class="nav-link text-white text-center" href="#empresa">A Empresa</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-white text-center" href="#cotacao">Cotação</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-white text-center" href="#contato">Contato</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-
   <link rel="stylesheet" type="text/css" href="//assets.locaweb.com.br/locastyle/2.0.6/stylesheets/locastyle.css">
   <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
     <div class="carousel-inner">
@@ -51,10 +26,10 @@
   <div id="empresa">
     <div class="container empresaCont">
       <div class="card border border-white cardPad">
-        <h5 class="h3 text-center tituloH5">A EMPRESA</h5>
+        <h5 class="h2 text-center tituloH5yel">A EMPRESA</h5>
         <div class="card-body cardBod">
           <img class="logoempresa" src="../img/logo.png" alt="Card image cap">
-          <p class="card-text">A Vai Voando Express é um agente de cargas Multimodal, que acumula 25 anos de
+          <p class="card-text text-justify cardfont">A Vai Voando Express é um agente de cargas Multimodal, que acumula 25 anos de
             experiência,
             operando em todo Território Nacional. Somos credenciados em toda as companhias aéreas nacionais e
             grandes parceiros na malha rodoviária, com sede no Rio de Janeiro - RJ, atuando no ramo de cargas
@@ -67,7 +42,7 @@
           <img class="card-img-top w-50 rounded mx-auto d-block" src="../img/missao.png" alt="Card image cap">
           <div class="card-body">
             <h5 class="h4 text-center tituloH5">MISSÃO</h5>
-            <p class="card-text">Desenvolver soluções integradas de logística, focadas nas necessidades dos nossos
+            <p class="card-text text-justify cardfont">Desenvolver soluções integradas de logística, focadas nas necessidades dos nossos
               clientes,
               garantindo o sucesso e sustentabilidade dos negócios.</p>
           </div>
@@ -76,7 +51,7 @@
           <img class="card-img-top w-50 rounded mx-auto d-block" src="../img/visao.png" alt="VISÃO">
           <div class="card-body">
             <h5 class="h4 text-center tituloH5">VISÃO</h5>
-            <p class="card-text">Ser reconhecida por seus clientes e colaboradores, como uma das mais bem sucedidas
+            <p class="card-text text-justify cardfont">Ser reconhecida por seus clientes e colaboradores, como uma das mais bem sucedidas
               empresa do
               mercado.</p>
           </div>
@@ -85,7 +60,7 @@
           <img class="card-img-top w-50 rounded mx-auto d-block" src="../img/valores.png" alt="Card image cap">
           <div class="card-body">
             <h5 class="h4 text-center tituloH5">VALORES</h5>
-            <p class="card-text">Foco nas necessidades e níveis de serviços acordados. Fazer uso da tecnologia em todos
+            <p class="card-text text-justify cardfont">Foco nas necessidades e níveis de serviços acordados. Fazer uso da tecnologia em todos
               os
               processos e operações, trabalhando em equipe com comprometimento e segurança, buscando a satisfação total
               dos
@@ -99,15 +74,15 @@
   </div>
   <div id="cotacao">
     <div class="container cotacaoCont">
-      <h5 class="h3 text-center tituloH5C">COTAÇÃO</h5>
-      <p class="text-center" style="padding-bottom: 5%">Para solicitar uma cotação, preencha o formulário
+      <h5 class="h3 text-center tituloH5cora">COTAÇÃO</h5>
+      <p class="text-center cardfont" style="padding-bottom: 5%">Para solicitar uma cotação, preencha o formulário
         abaixo:
       </p>
       <%- include('cotacao'); -%>
   
     <div id="contato">
       <div class="container contatoCont">
-        <h5 class="h3 text-center tituloH5">CONTATO</h5>
+        <h5 class="h3 text-center tituloH5red">CONTATO</h5>
         <form action="" method="post">
           <div class="form-group">
             <label for=""></label>
@@ -123,12 +98,20 @@
           </div>
         </form>
 
-        <p>(21) 91234-5678</p>
-        <p>(21) 91234-5678</p>
+        <i class="fab fa-whatsapp" style="color: green"> </i>(21) 99828-2220
         <p>vaivoandoexpress@gmail.com</p>
 
       </div>
-
+<footer style="background-color: blue">
+  <div class="container">
+      <img src="./img/logo2.png" class="logonav" alt="">
+  </div>
+  <div class="">
+      <p> (21) 99828-2220</p>
+      
+      <p>vaivoandoexpress@gmail.com</p>
+  </div>
+</footer>
 
       <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.slim.min.js"></script>
       <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="

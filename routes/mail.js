@@ -13,6 +13,7 @@ const trasnporter = nodeMaieler.createTransport({
     }
 })
 
+/*
 const mailOpitions = {
     from: 'no-reaply@vaivoandoexpress.com.br',
     to: 'pazevedo2210@gmail.com',
@@ -27,4 +28,8 @@ trasnporter.sendMail(mailOpitions, (error, info) => {
         console.log('Email enviado: ' + info.response);
 
     }
-})
+})*/
+
+exports.sendMail = function (body) {
+    console.log(body);
+};

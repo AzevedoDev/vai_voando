@@ -1,58 +1,58 @@
-      <form class ="form-get">
+      <form class ="form-get" action="/sendMail" method="POST">
         <div class="form-group">
           <label for="nome" class="formAjuste">Nome Completo</label>
-          <input type="text" class="form-control form-get" id="completeName" placeholder="Escreva seu nome completo">
+          <input type="text" class="form-control" id="completeName" name="completeName" placeholder="Escreva seu nome completo">
         </div>
         <div class="form-group">
           <label for="email" class="formAjuste">E-mail</label>
-          <input type="email" class="form-control form-get" id="emailContato" placeholder="E-mail para contato">
+          <input type="email" class="form-control" id="emailContato" name="emailContato" placeholder="E-mail para contato">
         </div>
         <div class="form-group">
           <label for="telefone" class="formAjuste">Telefone para contato</label>
-          <input type="text" class="form-control form-get" id="telefone" placeholder="Telefone/Celular (Ex.: (21) 00000-0000)">
+          <input type="text" class="form-control" id="telefone" name="telefone" placeholder="Telefone/Celular (Ex.: (21) 00000-0000)">
         </div>
         <div class="form-group">
           <label for="endColeta" class="formAjuste">Endereço da coleta</label>
-          <input type="text" class="form-control form-get" id="endColeta" placeholder="Endereço da retirada">
+          <input type="text" class="form-control" id="endColeta" name="endColeta" placeholder="Endereço da coleta">
         </div>
         <div class="form-group">
           <label for="cepColeta" class="formAjuste cep">CEP da coleta</label>
-          <input type="text" class="form-control form-get" id="cepColeta" placeholder="Ex.: 00000-000">
+          <input type="text" class="form-control" id="cepColeta" name="cepColeta" placeholder="Ex.: 00000-000">
         </div>
         <div class="form-group">
           <label for="endEntrega" class="formAjuste">Endereço da entrega</label>
-          <input type="text" class="form-control form-get" id="endEntrega" placeholder="Endereço da retirada">
+          <input type="text" class="form-control" id="endEntrega" name="endEntrega" placeholder="Endereço da entrega">
         </div>
         <div class="form-group">
           <label for="cepEntrega" class="formAjuste cep">CEP da entrega</label>
-          <input type="text" class="form-control form-get" id="cepEntrega" placeholder="Ex.: 00000-000">
+          <input type="text" class="form-control" id="cepEntrega" name="cepEntrega" placeholder="Ex.: 00000-000">
         </div>
         <div class="form-row">
           <div class="form-group col-sm-6 col-md-2 text-center">
             <label for="qtdVolumes" class="fontAjuste">Qtd. de Volumes :</label>
             <div class="form-group">
-              <input type="number" class="form-control form-get" id="endColeta" placeholder="">
+              <input type="number" class="form-control" id="qtdVolumes" name="qtdVolumes" placeholder="">
             </div>
           </div>
           <div class="form-group col-sm-6 col-md-2 text-center">
-            <label for="prodPeso">Peso: (g)</label>
+            <label for="prodPeso">Peso: (gramas)</label>
             <div class="form-group">
-              <input type="number" class="form-control form-get" id="peso" placeholder="">
+              <input type="number" class="form-control" name="peso" id="peso" placeholder="">
             </div>
           </div>
           <div class="form-group col-sm-6 col-md text-center">
             <label for="medidaProd">Medidas: (cm)</label>
             <div class="form-inline align-self-center">
-              <input type="number" class="form-control col-sm-6 col-md-4 form-get" id="alturaProd" placeholder="Altura">
-              <input type="number" class="form-control col-sm-6 col-md-4 form-get" id="larguraProd" placeholder="Largura">
-              <input type="number" class="form-control col-sm-6 col-md-4 form-get" id="comprimentoProd" placeholder="Comprimento">
+              <input type="number" class="form-control col-sm-6 col-md-4" name="alturaProd" id="alturaProd" placeholder="Altura">
+              <input type="number" class="form-control col-sm-6 col-md-4" name="larguraProd" id="larguraProd" placeholder="Largura">
+              <input type="number" class="form-control col-sm-6 col-md-4" name="comprimentoProd" id="comprimentoProd" placeholder="Comprimento">
             </div>
           </div>
         </div>
         <div class="form-group">
           <label for="valorNota">Valor da nota:</label>
-          <input type="number" class="form-control" id="valorNota" placeholder="R$">
+          <input type="text" class="form-control" id="valorNota" placeholder="R$">
         </div>
-        <button type="submit" class="btn btn-primary form-get">Enviar</button>
+        <input type="submit" class="btn btn-primary" value="Enviar">
       </form>
     </div>

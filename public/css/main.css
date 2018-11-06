@@ -19,9 +19,29 @@ body{
 .tituloH5{
     color: rgba(0, 52, 96);
 }
+.tituloH5yel{
+    color: black;
+    padding: 1.1em;
+    font: bold;
+    background-color: yellow;
+}
 .tituloH5C{
     color: rgba(0, 52, 96);
     margin-bottom: 4%;
+}
+.tituloH5cora{
+    color: black;
+    padding: 1.1em;
+    font: bold;
+    background-color: rgba(238, 141, 39);
+}
+.tituloH5red{
+    color: black;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    font: bold;
+    background-color: red;
+
 }
 /* cotacao */
 #cotacao{
@@ -45,6 +65,10 @@ body{
     background-color: white; 
     padding: 5% 10%;
 
+}
+
+.cardfont{
+    font-size: 1.2em;
 }
 
 /* Extra small devices (portrait phones, less than 576px) */
