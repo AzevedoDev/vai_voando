@@ -1,47 +1,47 @@
-var mail = require("./mail.js");
-var faker = require('faker');
+const faker = require('faker');
+const mail = require('./mail.js');
 
-var appRouter = function (app) {
+const appRouter = function (app) {
+  app.get('/', (req, res) => {
+    res.render('index');
+  });
 
-    app.get('/', (req, res) => {
-        res.render('index')
+  app.post('/sendMail', (req, res) => {
+    console.log('routes', req.body);
+    mail.sendMail(req.body);
+    res.status(200).send('Email Sent');
+  });
+
+  app.get('/user', (req, res) => {
+    const data = ({
+      fisrtName: faker.name.firstName(),
+      lastName: faker.name.lastName(),
+      username: faker.internet.userName(),
+      email: faker.internet.email(),
     });
+    res.status(200).send(data);
+  });
 
-    app.post('/sendMail', function (req, res) {
-        console.log(req.body);
-        mail.sendMail(req.body);
-        res.status(200).send("Email Sent");
-    });
+  app.get('/user/:num', (req, res) => {
+    const users = [];
+    const num = req.params.num;
 
-    app.get('/user', function (req, res) {
-        var data = ({
-            fisrtName: faker.name.firstName(),
-            lastName: faker.name.lastName(),
-            username: faker.internet.userName(),
-            email: faker.internet.email()
-        })
-        res.status(200).send(data)
-    });
+    if (isFinite(num) && num > 0) {
+      for (let i = 0; i <= num - 1; i += 1) {
+        users.push({
+          fisrtName: faker.name.firstName(),
+          lastName: faker.name.lastName(),
+          username: faker.internet.userName(),
+          email: faker.internet.email(),
+        });
+      }
+      res.status(200).send(users);
+    } else {
+      res.status(400).send({
+        message: 'invalid number supplied',
+      });
+    }
+  });
+};
 
-    app.get('/user/:num', function (req, res) {
-        var users = []
-        var num = req.params.num;
-
-        if (isFinite(num) && num > 0) {
-            for (let i = 0; i <= num - 1; i++) {
-                users.push({
-                    fisrtName: faker.name.firstName(),
-                    lastName: faker.name.lastName(),
-                    username: faker.internet.userName(),
-                    email: faker.internet.email()
-                })
-            }
-            res.status(200).send(users)
-        } else {
-            res.status(400).send({ message: 'invalid number supplied' })
-        }
-    });
-
-}
-
-module.exports = appRouter
+module.exports = appRouter;
