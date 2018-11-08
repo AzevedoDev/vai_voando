@@ -6,42 +6,18 @@ const appRouter = function (app) {
     res.render('index');
   });
 
-  app.post('/sendMail', (req, res) => {
+  app.post('/sendMail', async (req, res) => {
     console.log('routes', req.body);
-    mail.sendMail(req.body);
-    res.status(200).send('Email Sent');
-  });
-
-  app.get('/user', (req, res) => {
-    const data = ({
-      fisrtName: faker.name.firstName(),
-      lastName: faker.name.lastName(),
-      username: faker.internet.userName(),
-      email: faker.internet.email(),
-    });
-    res.status(200).send(data);
-  });
-
-  app.get('/user/:num', (req, res) => {
-    const users = [];
-    const num = req.params.num;
-
-    if (isFinite(num) && num > 0) {
-      for (let i = 0; i <= num - 1; i += 1) {
-        users.push({
-          fisrtName: faker.name.firstName(),
-          lastName: faker.name.lastName(),
-          username: faker.internet.userName(),
-          email: faker.internet.email(),
-        });
-      }
-      res.status(200).send(users);
+    var sendMailStatus = await mail.sendMail(req.body);
+    console.log(sendMailStatus);
+    if(sendMailStatus){
+      console.log('felizzzzzzz');
+      res.status(200).send({message: "weeeee"});
     } else {
-      res.status(400).send({
-        message: 'invalid number supplied',
-      });
+      console.log('tristeeeee');
+      res.status(400).send({message: "asdasasdadsasdasdadssdadasdasdadasd"});
     }
   });
-};
+}
 
 module.exports = appRouter;

@@ -35,4 +35,26 @@ $(document).ready(() => {
     }
   });
 
+
+  $('#butao').on('click', function () {
+    console.log('qualquerporra');
+    var formulario = $('#formulario');
+    var formData = {};
+    $(formulario).find("input[name]").each(function (index, node) {
+        formData[node.name] = node.value;
+    });
+    console.log("formData: " + formData);
+    $.ajax({
+      type: 'POST',
+      url: '/sendMail',
+      dataType: 'json',
+      data: formData,
+      success: function (data, status, jqXHR) {
+        console.log('sucesso');
+      },
+      error: function (jqXHR, status) {
+        console.log('erro ' + jqXHR + ' - ' + status);
+      }
+    })
+  })
 });
