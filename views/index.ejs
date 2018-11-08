@@ -1,126 +1,23 @@
+<!-- Inicio Header -->
 <%- include('header'); -%>
-  <link rel="stylesheet" type="text/css" href="//assets.locaweb.com.br/locastyle/2.0.6/stylesheets/locastyle.css">
-  <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-  <link rel="stylesheet" type="text/css" href="//assets.locaweb.com.br/locastyle/2.0.6/stylesheets/locastyle.css">
-        <img class="d-block w-100" src="../img/Banner.png" alt="First slide">
-      </div>
-      <div class="carousel-item">
-  <link rel="stylesheet" type="text/css" href="//assets.locaweb.com.br/locastyle/2.0.6/stylesheets/locastyle.css">
-        <img class="d-block w-100" src="../img/carro2.jpg" alt="Second slide">
-      </div>
-      <div class="carousel-item">
-        <img class="d-block w-100" src="../img/carro1.jpg" alt="Third slide">
-      </div>
-    </div>
-    <a class="carousel-control-prev" href="#carouselExampleFade" role="button" data-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="sr-only">Previous</span>
-    </a>
-    <a class="carousel-control-next" href="#carouselExampleFade" role="button" data-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="sr-only">Next</span>
-    </a>
-  </div>
-  <div id="empresa">
-    <div class="container empresaCont">
-      <div class="card border border-white cardPad">
-        <h5 class="h2 text-center tituloH5yel">A EMPRESA</h5>
-        <div class="card-body cardBod">
-          <img class="logoempresa" src="../img/logo.png" alt="Card image cap">
-          <p class="card-text text-justify cardfont">A Vai Voando Express é um agente de cargas Multimodal, que acumula 25 anos de
-            experiência,
-            operando em todo Território Nacional. Somos credenciados em toda as companhias aéreas nacionais e
-            grandes parceiros na malha rodoviária, com sede no Rio de Janeiro - RJ, atuando no ramo de cargas
-            domésticas.</p>
+<!-- Final Header -->
 
-        </div>
-      </div>
-      <div class="card-deck">
-        <div class="card border border-white">
-          <img class="card-img-top w-50 rounded mx-auto d-block" src="../img/missao.png" alt="Card image cap">
-          <div class="card-body">
-            <h5 class="h4 text-center tituloH5">MISSÃO</h5>
-            <p class="card-text text-justify cardfont">Desenvolver soluções integradas de logística, focadas nas necessidades dos nossos
-              clientes,
-              garantindo o sucesso e sustentabilidade dos negócios.</p>
-          </div>
-        </div>
-        <div class="card border border-white">
-          <img class="card-img-top w-50 rounded mx-auto d-block" src="../img/visao.png" alt="VISÃO">
-          <div class="card-body">
-            <h5 class="h4 text-center tituloH5">VISÃO</h5>
-            <p class="card-text text-justify cardfont">Ser reconhecida por seus clientes e colaboradores, como uma das mais bem sucedidas
-              empresa do
-              mercado.</p>
-          </div>
-        </div>
-        <div class="card border border-white">
-          <img class="card-img-top w-50 rounded mx-auto d-block" src="../img/valores.png" alt="Card image cap">
-          <div class="card-body">
-            <h5 class="h4 text-center tituloH5">VALORES</h5>
-            <p class="card-text text-justify cardfont">Foco nas necessidades e níveis de serviços acordados. Fazer uso da tecnologia em todos
-              os
-              processos e operações, trabalhando em equipe com comprometimento e segurança, buscando a satisfação total
-              dos
-              nossos clientes.</p>
-          </div>
-        </div>
-      </div>
-      </li>
-      </ul>
-    </div>
-  </div>
-  <div id="cotacao">
-    <div class="container cotacaoCont">
-      <h5 class="h3 text-center tituloH5cora">COTAÇÃO</h5>
-      <p class="text-center cardfont" style="padding-bottom: 5%">Para solicitar uma cotação, preencha o formulário
-        abaixo:
-      </p>
-      <%- include('cotacao'); -%>
-  
-    <div id="contato">
-      <div class="container contatoCont">
-        <h5 class="h3 text-center tituloH5red">CONTATO</h5>
-        <form action="" method="post">
-          <div class="form-group">
-            <label for=""></label>
-            <input type="text" name="nome" id="nome" class="form-control" placeholder="Nome" aria-describedby="helpId">
-          </div>
-          <div class="form-group">
-            <label for=""></label>
-            <input type="email" class="form-control" name="" id="" aria-describedby="emailHelpId" placeholder="E-mail">
-          </div>
-          <div class="form-group">
-            <label for=""></label>
-            <textarea class="form-control" name="" id="" rows="4"></textarea>
-          </div>
-        </form>
+<!-- Inicio carousel -->
+<%- include('carousel'); -%>
+<!-- Final carousel -->
 
-        <i class="fab fa-whatsapp" style="color: green"> </i>(21) 99828-2220
-        <p>vaivoandoexpress@gmail.com</p>
+<!-- Inicio empresa -->
+<%- include('empresa'); -%>
+<!-- Final empresa -->
 
-      </div>
-<footer style="background-color: blue">
-  <div class="container">
-      <img src="./img/logo2.png" class="logonav" alt="">
-  </div>
-  <div class="">
-      <p> (21) 99828-2220</p>
-      
-      <p>vaivoandoexpress@gmail.com</p>
-  </div>
-</footer>
+<!-- Inicio cotacao -->
+<%- include('cotacao'); -%>
+<!-- Final cotacao -->
 
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.slim.min.js"></script>
-      <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-        crossorigin="anonymous"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.13.0/umd/popper.min.js"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.min.js"></script>
-      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.0/jquery.mask.js"></script>
-      <script src="../js/main.js"></script>
-      <script src="../js/teste.js"></script>
-    </body>
+<!-- Inicio contato -->
+<%- include('contato'); -%>
+<!-- Final contato -->
 
-</html>
+<!-- Inicio footer -->
+<%- include('footer'); -%>
+<!-- Final footer -->
