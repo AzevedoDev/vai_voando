@@ -1,134 +1,148 @@
+* {
+  margin: 0;
+  padding: 0;
+}
 /* Fonte do body */
-body{
-    font-family: 'Merriweather', serif;
+body {
+  font-family: "Merriweather", serif;
 }
 /* empresa */
-#empresa{
-    background-color:yellow
+#empresa {
+  background-color: yellow;
 }
-.empresaCont{
-    background-color: white;
-    padding: 5%;
+.empresaCont {
+  background-color: white;
+  padding: 5%;
 }
-.cardPad{
-    padding: 5px;
+.cardPad {
+  padding: 5px;
 }
-.cardBod{
-    margin-bottom: 5%;
+.cardBod {
+  margin-bottom: 5%;
 }
-.tituloH5{
-    color: rgba(0, 52, 96);
+.tituloH5 {
+  color: rgba(0, 52, 96);
 }
-.tituloH5yel{
-    color: black;
-    padding: 1.1em;
-    font: bold;
-    background-color: yellow;
+.tituloH5yel {
+  color: black;
+  padding: 1.1em;
+  font: bold;
+  background-color: yellow;
 }
-.tituloH5C{
-    color: rgba(0, 52, 96);
-    margin-bottom: 4%;
+.tituloH5C {
+  color: rgba(0, 52, 96);
+  margin-bottom: 4%;
 }
-.tituloH5cora{
-    color: black;
-    padding: 1.1em;
-    font: bold;
-    background-color: rgba(238, 141, 39);
+.tituloH5cora {
+  color: black;
+  padding: 1.1em;
+  font: bold;
+  background-color: rgba(238, 141, 39);
 }
-.tituloH5red{
-    color: black;
-    padding-top: 2%;
-    padding-bottom: 2%;
-    font: bold;
-    background-color: red;
-
+.tituloH5red {
+  color: black;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  font: bold;
+  background-color: red;
 }
 /* cotacao */
-#cotacao{
-    background-color: rgba(238, 141, 39);
+#cotacao {
+  background-color: rgba(238, 141, 39);
 }
-.cotacaoCont{
-    background-color: white; 
-    padding: 5% 10%;
+.cotacaoCont {
+  background-color: white;
+  padding: 5% 10%;
 }
-.formAjuste{
-    margin-left: 1%;
+.formAjuste {
+  margin-left: 1%;
 }
-.fontAjuste{
-    font-size: 97%;
+.fontAjuste {
+  font-size: 97%;
 }
 /* contato */
-#contato{
-    background-color: rgb(225, 49, 51);
+#contato {
+  background-color: rgb(225, 49, 51);
 }
-.contatoCont{
-    background-color: white; 
-    padding: 5% 10%;
-
+.contatoCont {
+  background-color: white;
+  padding: 5% 10%;
 }
 
-.cardfont{
-    font-size: 1.2em;
+.cardfont {
+  font-size: 1.2em;
+}
+
+.footer {
+  background: rgb(32, 32, 216);
+  color: #fff;
+  display: flex;
+  padding: 10px 0;
+}
+.footer-wrapper {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: space-evenly;
 }
 
 /* Extra small devices (portrait phones, less than 576px) */
-@media (max-width: 575.98px) { 
-    .logoempresa{
-    width: 40%;  
+@media (max-width: 575.98px) {
+  .logoempresa {
+    width: 40%;
     display: block;
     margin-left: auto;
     margin-right: auto;
-    } 
-    .logonav{
-        width: 80%
-    }
-
+  }
+  .logonav {
+    width: 80%;
+  }
 }
 
 /*  Small devices (landscape phones, 576px and up) */
-@media (min-width: 576px) and (max-width: 767.98px) { 
-    .logoempresa{
-    width: 40%;  
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .logoempresa {
+    width: 40%;
     display: block;
     margin-left: auto;
     margin-right: auto;
-    } 
-    .logonav{
-        width: %
-    }
+  }
+  .logonav {
+    width: 10%;
+  }
 }
 
 /*  Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) and (max-width: 991.98px) { 
-    .logoempresa{
-    width: 40%;  
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .logoempresa {
+    width: 40%;
     display: flex;
     margin-left: auto;
     margin-right: auto;
-    }
-    .fontAjuste{
-        font-size: 97%;
-    }    
+  }
+  .fontAjuste {
+    font-size: 97%;
+  }
 }
 
 /* Large devices (desktops, 992px and up) */
-@media (min-width: 992px) and (max-width: 1199.98px) { .logoempresa{
-    width: 40%;  
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .logoempresa {
+    width: 40%;
     display: flex;
     margin-left: auto;
     margin-right: auto;
-    }
-    .fontAjuste{
-        font-size: 85%;
-    }     
+  }
+  .fontAjuste {
+    font-size: 85%;
+  }
 }
 
 /* Extra large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) { 
-    .logoempresa{  
+@media (min-width: 1200px) {
+  .logoempresa {
     width: 20%;
     display: flex;
     float: left;
-    }
-    
+  }
 }
